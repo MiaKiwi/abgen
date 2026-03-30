@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [STVP](https://mia.kiwi/projects/stvp).
 
+## [26.0.4] - 2026-03-30
+
+### Added
+
+- `FirstVowelSplitAbbreviator`: keeps everything from start of token to first vowel (or nothing if there are no vowels)
+
+### Fixed
+
+- `FirstSyllableAbbreviator` breaking if input can't be broken into syllables
+
+
+
 ## [26.0.3] - 2026-03-25
 
 ### Changed

@@ -13,7 +13,7 @@ export default class FirstSyllableAbbreviator extends BaseEnglishAbbreviator {
 
         if (!word) return null;
 
-        let syllables = EnglishGrammar.syllabify(word);
+        let syllables = EnglishGrammar.syllabify(word) || [];
 
         let output = syllables.length > 0 ? syllables[0] : null;
 
