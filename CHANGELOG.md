@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [STVP](https://mia.kiwi/projects/stvp).
 
+## [26.0.6] - 2026-04-02
+
+### Added
+
+- `NumericSubstitutionAbbreviator`, applies "powers" to letters to bundle them (e.g. IEEE becomes IE3)
+- `ExPrefixTruncateAbbreviator`, returns "X" for words starting with "ex-" or "x-"
+- `HomophoneAbbreviator`, replaces "for" with "4", "to" with "2", etc...
+
+
+
 ## [26.0.5] - 2026-04-02
 
 ### Fixed
