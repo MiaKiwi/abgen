@@ -22,6 +22,6 @@ export default class FirstSyllableAbbreviator extends BaseEnglishAbbreviator {
             output += syllables[1][0];
         }
 
-        return output;
+        return output === word ? null : output;
     }
 }

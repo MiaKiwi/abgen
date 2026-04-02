@@ -23,12 +23,13 @@ export default class FirstVowelSplitAbbreviator extends BaseEnglishAbbreviator {
         if (!word) return null;
 
         // Get index of first vowel
-        let vowelIndex = EnglishGrammar.vowelsRegex.exec(word).index
+        let vowelIndex = EnglishGrammar.vowelsRegex.exec(word)?.index
 
+        let output = word;
         if (vowelIndex >= 0 && vowelIndex < word.length) {
-            return word.slice(0, vowelIndex + (this.settings.preserveVowel ? 1 : 0));
-        } else {
-            return null;
+            output = word.slice(0, vowelIndex + (this.settings.preserveVowel ? 1 : 0));
         }
+
+        return output === word ? null : output;
     }
 }

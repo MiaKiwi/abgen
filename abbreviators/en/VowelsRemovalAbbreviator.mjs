@@ -11,6 +11,8 @@ export default class VowelRemovalAbbreviator extends BaseEnglishAbbreviator {
     abbreviate(word) {
         word = this.sanitize(word);
 
-        return word ? word.replace(EnglishGrammar.vowelsRegex, "") : null;
+        let output = word?.replace(EnglishGrammar.vowelsRegex, "") ?? word;
+
+        return output === word ? null : output;
     }
 }
